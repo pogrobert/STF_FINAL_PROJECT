@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "BaseTest" parallel="tests">
+    <test name = "first">
+
+        <parameter name = "browser" value="firefox"/>
+
+        <classes>
+            <class name = "tests.SearchFunctionality" />
+        </classes>
+
+    </test>
+
+    <test name = "second">
+
+        <parameter name = "browser" value="chrome"/>
+
+        <classes>
+            <class name = "tests.AddToBag" />
+        </classes>
+
+    </test>
+</suite>
